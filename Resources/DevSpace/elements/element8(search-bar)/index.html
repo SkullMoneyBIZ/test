@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="searchbox">
+        <div class="search"><ion-icon name="search-outline"></ion-icon></div>
+        <div class="searchInput">
+            <input type="text" placeholder="Search Here">
+        </div>
+        <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let search = document.querySelector('.search');
+        let close = document.querySelector('.close');
+        let searchbox = document.querySelector('.searchbox');
+        search.onclick = function(){
+            searchbox.classList.add('active');
+        }
+        close.onclick = function(){
+            searchbox.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

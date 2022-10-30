@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+.container{
+  position: relative;
+  width: 700px;
+  min-height: 400px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px
+}
+
+.container .title{
+  position: relative;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  height: 52px;
+  margin: 18px 0;
+  width: calc(100% / 2 - 20px);
+}
+/* .user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+} */
+.user-details .input-box input,
+.user-details .input-box textarea
+{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(189, 51, 131, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border-bottom-width: 2.5px;
+  transition: all 0.3s ease;
+}
+
+form .service-details .service-title{
+  font-size: 28px;
+  font-weight: 500;
+}
+font .service-details .category{
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+.service-details .category label{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.service-details .category .dot{
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+  border-color: #fff;
+  background: #9b59b6;
+}
+
+form input[type="checkbox"]{
+  display: none;
+}
+
+.btn{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.btn .inputBox{
+  width: 100%;
+  margin-top: 20px;
+}
+.btn .inputBox input{
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.btn .inputBox input::placeholder
+{
+  color: #333;
+}
+.btn .inputBox input[type="submit"]{
+  background: #4070f4;
+  color: #fff;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+}
+.btn .inputBox input[type="submit"]:hover{
+  background: #fff;
+  color: #333;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+}service

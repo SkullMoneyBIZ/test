@@ -1,0 +1,4 @@
+CLIENT ID
+162445518400-2q9iq4opiio7brpjpennl3550n54h0q2.apps.googleusercontent.com
+CLIENT SECRET
+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
